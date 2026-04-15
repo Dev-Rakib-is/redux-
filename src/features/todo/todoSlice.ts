@@ -35,6 +35,10 @@ const todoSlice = createSlice({
         deleteSelected: (state) => {
             state.todos = state.todos.filter(t => !t.selected);
         },
+        editTodo: () => { },
+        toggleComplete: () => { },
+        selectAll: () => { },
+        setFilter: () => { },
 
     }
 })
