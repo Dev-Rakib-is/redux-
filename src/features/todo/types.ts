@@ -4,9 +4,9 @@ export interface Todo {
     completed: boolean;
     selected?: boolean
 }
-type FilterType = "all" | "completed" | "pending";
+export type FilterType = "all" | "completed" | "pending";
 
-interface TodoState {
+export interface TodoState {
     todos: Todo[]
     filter: FilterType
     loading: boolean
