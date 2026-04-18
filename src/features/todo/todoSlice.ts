@@ -14,13 +14,13 @@ const todoSlice = createSlice({
   initialState,
   reducers: {
     addTodo: (state, action: PayloadAction<string>) => {
-      if (!action.payload.trim()) return; // ✅ empty block
+      if (!action.payload.trim()) return; 
 
       const newTodo: Todo = {
         id: Date.now().toString(),
         text: action.payload,
         completed: false,
-        selected: false // ✅ default set
+        selected: false 
       };
 
       state.todos.push(newTodo);
